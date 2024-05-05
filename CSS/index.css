@@ -1,0 +1,372 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 120rem;
+    font-size: 1rem;
+}
+
+.section1 {
+    max-width: 120rem;
+    min-height: 95vh;
+    border: 1px solid transparent;
+    background-image: url('../images/section1-bg.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 60% 100%;
+    background-color: rgba(196, 196, 196, 1);
+}
+
+.section1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   /* border: 1px solid red;*/
+    list-style-type: none;
+}
+
+.section1 nav {
+    margin-top: 4.5rem;
+    padding-left: 15vw;
+}
+
+.section1 .ITEMS {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    gap: 2rem;
+}
+
+.section1 .ITEMS a {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    max-width: 9.1875rem;
+    height: 2.875rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-decoration: none;
+      
+}
+
+.section1 .ITEMS .contactUS {
+    text-wrap: nowrap;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 1.875rem;
+    border: 4px solid #FFF;
+    background: #FFF;
+    padding: 0.8rem 1.5vw;
+}
+.section1 .logo-mobile{
+    display: none;
+}
+.section1 .menu{
+    display: none;
+}
+/*the above is desktop view*/
+@media screen and (max-width: 1055px){
+    .section1{
+        background-image: unset;
+    }
+    .section1 .ITEMS a {
+        color: black;
+    }
+}
+
+/*responsive mobile*/
+
+@media screen and (max-width: 740px){
+    .section1 nav{
+        height: 3.5625rem;
+        background-color: black;
+        margin-top: unset;
+        padding-left: 1.88rem;
+    }
+    .dropbtn {
+        /* background-color: #04aa6d; */
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: fixed;
+        left: 0rem;
+        top: 3.5625rem;
+        background-color: #00000066;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+      }
+      
+      .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-family: montserrat;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        height: 3.5625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #fff;
+        color: black;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        /* background-color: #3e8e41; */
+      }
+    .section1 .ITEMS{
+        display: none;
+    }
+
+    .section1 .logo-mobile{
+        display: flex;
+    }
+    .section1 .logo-desktop{
+        display: none; 
+    } 
+    .section1 .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .section1 ul{
+        height: inherit; 
+    }
+    .section1 .menu{
+        display: flex;
+        padding-right: 1.27rem; 
+      }
+}
+
+/*styles line*/
+
+
+.section1 .line1 {
+    /*margin-top: 2.13rem;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: minmax(34rem, auto);
+}
+
+.section1 .boxa{
+    /*border: 1px solid red;*/
+    padding-left: 15vw;
+    
+}
+.section1 p.one{
+    color: #000;
+text-align: left;
+font-family: Raleway;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 8rem;
+}
+.section1 .two{ 
+color: #000;
+text-align: left;
+font-family: Raleway;
+font-size: 3.5vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+text-wrap: nowrap;
+margin-top: 3.35rem;
+}
+.section1 .three{ 
+    color: #909090;
+text-align: left;
+font-family: Raleway;
+font-size : 1.3625vw;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+ }
+
+.section1 .text-mobile{
+    display: none ;
+}
+.section1 .boxb {
+    /*border: 1px solid red;*/
+}
+
+.section1 .boxa .icons{
+    margin-top: 7.88rem;
+    display: flex;
+    gap: 1.94rem;
+    align-items: center;
+    
+}
+.section1 .icons .i{
+    width: 3.8125rem;
+    height: 3.5rem;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px 0px rgba(39, 5, 5, 0.25);
+    fill: black;
+}
+.section1 .boxa .icon1{
+    background-image: url('../images/Vector.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center; 
+
+}
+.section1 .boxa .icon2{
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-image: url('../images/github.svg')
+    
+}
+.section1 .boxa .icon3{
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-image: url('../images/linkedn.svg')
+    
+}
+.section1 .boxb{
+    /*border: 1px solid red;*/
+    background-image: url('/images/image 17.svg');
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    position: relative;
+
+}
+.section1 .boxb .text{
+    position: absolute;
+    bottom: 0rem;
+    left: calc(100% / 2 - 8.5rem);
+    width:  8.5rem;
+    height: 3.75rem;
+    color: #000;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;  
+    line-height: normal;
+    background-color: transparent;
+
+}
+/*responsive mobile*/
+
+@media screen and (max-width: 740px) {
+    .section1{
+        background-image: url('../images/Background.svg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    .section1 .text-mobile{
+        display: flex;
+    }
+   
+
+    .section1 .text-desktop{
+        display: none;
+    }
+
+    .section1 .boxa{
+        padding: unset;
+        margin-top: 35vh;
+    }
+    .section1 .text-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section1 .text-mobile p.one{
+        color: #fff; 
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.5625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+       
+    }
+    .section1 .text-mobile p.two{
+        color: #fff; 
+        text-align: center;
+        font-family: "Advent Pro" sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0rem;
+       
+    }
+    .section1 .text-mobile p.three{
+        background-image: url('../images/separatorWhite\ 2.png');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        width: 7.5rem;
+        height: 0.625rem;
+        margin-top: 0.88rem;
+
+       
+    }
+    .section1 .boxb{
+        display: none;
+    }
+    .section1 .boxa .icons{
+        justify-content: center;
+        margin-top: 1.75rem;
+    }
+    .section1 .icons .i{
+       background-color: unset;
+       box-shadow: unset;
+       }
+       .section1 .boxa .icon1 {
+        background-image: url('../imags/cib_mail-ru.svg');
+       }
+       .section1 .boxa .icon2{
+        background-image: url('../imags/ant-design_github-filled.svg');
+        
+       }
+       .section1 .boxa .icon3{
+        background-image: url('../imags/ant-design_github-filled.svg');
+       }
+    
+}
