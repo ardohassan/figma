@@ -81,7 +81,7 @@ html {
     display: none;
 }
 /*the above is desktop view*/
-@media screen and (max-width: 1055px){
+@media screen and (max-width: 1000px){
     .section1{
         background-image: unset;
     }
@@ -92,7 +92,7 @@ html {
 
 /*responsive mobile*/
 
-@media screen and (max-width: 740px){
+@media screen and (max-width: 665px){
     .section1 nav{
         height: 3.5625rem;
         background-color: black;
@@ -289,9 +289,15 @@ line-height: normal;
     background-color: transparent;
 
 }
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    color: #333;
+  }
 /*responsive mobile*/
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 665px) {
     .section1{
         background-image: url('../images/Background.svg');
         background-size: cover;
@@ -368,5 +374,11 @@ line-height: normal;
        .section1 .boxa .icon3{
         background-image: url('../imags/ant-design_github-filled.svg');
        }
-    
+       footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #f2f2f2;
+        color: #333;
+      }
+
 }
